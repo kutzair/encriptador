@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    
+    <title>Encriptador Alura</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img class="logo" src="img/Logo_blanco.png" alt="logotipo alura">
+            <h1 class="titulo">Encriptador</h1>
+        </nav>
+    </header>
+    <main>
+        <!-- <section id="mensajeEntrada" class="mensajeEntrada paneles">
+            <textarea id="mensajeIN" name="mitexto" id="mitexto" cols="30" rows="10"></textarea>
+        </section> -->
+        <section id="mensajeEntrada" class="mensajeEntrada paneles animate__animated animate__animated">
+            <div class="captura">
+                <textarea name="mensajeIN" id="mensajeIN" cols="30" rows="10" placeholder="Ingrese el texto a encriptar"></textarea>
+            </div>
+            <p class="aviso"><small>Por favor ingrese el texto que desee codificar.</small></p>
+            <small class="aviso">* Sólo letras minúsculas, sin acentos.</small><br>
+
+            <div class="botones">
+                <button onclick="encriptarBtn()" class="btn-grad-encode btn">Encriptar</button>
+                <button onclick="descencriptarBtn()" class="btn-grad-decode btn">Descencriptar</button>
+            </div>
+        </section>
+        <section id="mensajeSalida" class="mensajeSalida paneles">
+            <div class="resultado">
+                <textarea name="mensajeOUT" id="mensajeOUT" cols="30" rows="10" placeholder="Mensaje encriptado" readonly></textarea>
+            </div>
+            <p class="aviso"><small>Listo!, su texto ha sido codificado con exito!, </br> presione el botón copiar para tenerlo disponible en el portapapeles.</small></p>
+            <div class="botones">
+                <button onclick="copiarBtn()" class="btn-grad-copy btn"><i class="fa-solid fa-copy"></i> Copiar</button>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <p>
+            Osiris Castillo - 
+            <a href="https://github.com/kutzair/alura" target="_blank" rel="noopener noreferrer"> <i class="fa-brands fa-github"></i></a>
+        </p>
+    </footer>
+    <script src="/js/lib.js"></script>
+</body>
+</html>
