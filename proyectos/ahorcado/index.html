@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <title>Juego Ahorcado - Alura Challenge</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img class="logo" src="img/Logo_blanco.png" alt="logotipo alura">
+            <h1 class="titulo">Juego Ahorcado</h1>
+        </nav>
+    </header>
+
+    <main>
+        <!-- MENU PRINCIPAL -->
+        <section id="menuPrincipal" class="menuPrincipal animate__animated animate__flipInX">
+            <p class="tituloCentrado">Selecciona una opción:</p>
+            <div class="botones">
+                <button onclick="inicioBtn()" class="btn btnInicio">Iniciar Juego</button>
+                <button onclick="agregarPalabraBtn()" class="btn btnPalabra">Agregar palabra</button>
+            </div>
+        </section>
+        <!-- INICIO JUEGO y PANEL DEL JUEGO -->
+        <section id="juegoAhorcado" class="juegoAhorcado animate__animated animate__flipInX">
+            <canvas id = "horca" class = "lienzoAhorcado" width="1054" height="800"></canvas>
+            <div class="botones">
+                <button class="btn btnNuevoJuego" onclick="nuevoJuegoBtn()">Nuevo Juego</button>
+                <button class="btn btnDesistir" onclick="cancelarJuegoBtn()">Salir</button>
+            </div>
+        </section>
+        <!-- AGREGAR PALABRA -->
+        <section id="agregarPalabra" class="agregarPalabra animate__animated animate__flipInX">
+            <div class="formulario">
+                <p class="tituloCentrado">Ingrese una palabra de máximo 8 letras</p>
+                <input id="inputPalabra" class="palabraInput" type="text" maxlength="8" placeholder="ingresa una palabra">
+
+                <div class="botones">
+                    <button class="btn btnGuardar" onclick="guardarPalabra()">Guardar y empezar</button>
+                    <button class="btn btnCerrar" onclick="cerrarPalabraBtn()">Cancelar</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ALERTA MODAL -->
+        <section id="alertaModal" class="alertaModal overlay1 animate__animated animate__flipInX">
+            <div class="formulario">
+                <p id = "tituloAlertaModal" class="tituloCentrado">Titulo del Mensaje</p>
+                <p id = "msgAlertaModal"> Mensaje de la Alerta </p>
+
+                <div class="botones">
+                    <button id= "btnAlertaModal" class="btn btnCerrar" onclick="cerrarModalBtn()">Cerrar</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            Osiris Castillo -
+            <a href="https://github.com/kutzair/encriptador" target="_blank" rel="noopener noreferrer"> <i
+                    class="fa-brands fa-github"></i></a>
+        </p>
+    </footer>
+    <script src="js/ahorcado.js"></script>
+    <script src="js/logica.js"></script>
+    <script src="js/graficos.js"></script>
+</body>
+
+</html>

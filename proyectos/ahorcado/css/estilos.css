@@ -1,0 +1,377 @@
+/* Estilos Juego Ahorcado */
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Microbe&display=swap');
+
+@viewport {
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
+
+@-ms-viewport {
+    width: extend-to-zoom;
+    zoom: 1.0;
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+    line-height: 150%;
+}
+
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    background-color: #E5E5E5;
+    /* background: url(/img/alura_bg-14-vacio.jpg); */
+    background-image: no-repeat;
+    background-image: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: 50%;
+    margin: 0;
+
+    background: #E0EAFC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    color: white;
+    display: flex;
+    padding: 10px 0;
+}
+
+nav {
+    width: 100%;
+    height: 70px;
+    padding-top: 1%;
+    background: rgba(225, 255, 0, 0.494);
+    filter: drop-shadow(0 0.05rem 0.40rem rgba(41, 43, 48, 0.938));
+    top: 0;
+    position: absolute;
+}
+
+.logo {
+    margin-top: 0.0%;
+    margin-right: 10%;
+    position: fixed;
+}
+
+.titulo {
+    font-family: 'Inter', sans-serif;
+    font-size: 30pt;
+    margin-left: 75%;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 105, 158, 0);
+    /* padding: 9% 0%; */
+
+    /* margin-top: 18%; */
+
+    /*IMPORTANTE*/
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+/* Propiedades de los paneles */
+.paneles {
+    width: 50%;
+    min-width: 300px;
+    min-height: 300px;
+    border-radius: 10px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0.5% 0.8% 0.5% 0.5%;
+    margin-top: 0px;
+    filter: drop-shadow(0 0 0.50rem rgba(20, 22, 26, 0.938));
+}
+
+
+.menuPrincipal{
+    /* display: none; */
+    width: 350px;
+    height:100px;
+    padding-top: 20px;
+    border-radius: 10px;
+    /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    background: #0847bc;
+    color: white;
+    margin: 0 auto;
+    
+
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    filter: drop-shadow(0 0 0.50rem rgba(20, 22, 26, 0.938));
+
+    margin-top: 20%;
+}
+
+.juegoAhorcado{
+    display: none;
+    color: white;
+    width: 40%;  /* 70% */
+    height: 25%;
+    /* min-width: 20%;
+    min-height: 60px; */
+    border-radius: 10px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0%;
+    /* padding: 0.5% 0.8% 0.5% 0.5%; */
+    /* margin-top: 0%; */
+
+
+    /*IMPORTANTE*/
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+
+    /* propiedad para navegadores antiguos */
+    background: #8e9eab; /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #eef2f3, #8e9eab);
+    /* background-color: #021937dd; */
+    /* filter: drop-shadow(0 0 0.50rem rgba(20, 22, 26, 0.938)); */
+    filter: drop-shadow(0 0.50rem 0.50rem rgba(20, 22, 26, 0.938));
+    margin-top: 7.5%;
+}
+
+.lienzoAhorcado{
+    width: 98%;
+    height:400px;
+    border-radius: 10px;
+
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(14,174,87,1) 0%, rgba(12,116,117,1) 90% );
+
+    margin-top:1%;
+}
+
+
+.agregarPalabra{
+    display: none;
+
+    width: 500px;
+    height:190px;
+    padding-top: 10px;
+    border-radius: 10px;
+    /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    background: #0847bc;
+    color: white;    
+    margin: 0 auto;
+    filter: drop-shadow(0 0 0.50rem rgba(20, 22, 26, 0.938));
+
+    background1: #232526;  /* fallback for old browsers */
+    background1: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background1: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-image: linear-gradient( 96.5deg,  rgba(39,103,187,1) 10.4%, rgba(16,72,144,1) 87.7% );
+    margin-top: 20%;
+}
+
+.alertaModal{
+    display: none;
+    /* width: 500px; */
+    /* height:190px; */
+
+    min-width: 350px;
+    width: max-content;
+    height: fit-content;
+    padding-top: 10px;
+    border-radius: 10px;
+    /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    background: #0847bc;
+    color: white;   
+   /* top: 0px; */
+   /* margin: 0 auto; */
+    filter: drop-shadow(0 0 0.50rem rgba(20, 22, 26, 0.938));
+
+    background1: #232526;  /* fallback for old browsers */
+    background1: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background1: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-image: linear-gradient( 96.5deg,  rgba(39,103,187,1) 10.4%, rgba(16,72,144,1) 87.7% );
+    margin-top: -10%;
+    margin-left: 35%;
+    z-index: 400;
+    float: left;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    transition: opacity 200ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+.formulario{
+    width: 96%;
+    height: 90%;
+    margin: 0 auto;
+    border-radius: 10px;
+    text-align: center;
+
+    padding-top: 10px;
+
+    /* background-image: linear-gradient( 96.5deg,  rgba(39,103,187,1) 10.4%, rgba(16,72,144,1) 87.7% ); */
+}
+
+.tituloCentrado{
+    color: #fedc00;
+    font-size: 20px;
+    text-align: center;
+}
+
+.palabraInput{
+    width: 70%;
+    border-radius: 10px;
+    padding: 2%;
+    font-size: 17px;
+    margin: 2%;
+    text-transform: uppercase;
+
+}
+
+/* BOTONES */
+.botones {
+    /* text-align: center;
+    margin: 0px auto;
+    display: inline; */
+
+    /* padding:10%; */
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Propiedades generales de los botones. */
+.btn{
+    /** propiedades generales de los botones */
+    margin: 10px;
+    padding: 3%;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 3px 5px rgba(37, 37, 37, 0.737);
+    border-radius: 10px;
+    display: block;
+
+    border: none;
+}
+.btn:hover{
+    /* cambia la direccion del degradado desde aqui */
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn:active
+{
+	transform: translate(0px,5px);
+    -webkit-transform: translate(0px,5px);
+	border-bottom: 1px solid black;
+    /* filter: drop-shadow(0rem 0.0rem 0.3rem rgba(0, 0, 0, 0.388)); */
+    filter: drop-shadow(0rem 0.0rem 0.3rem rgba(38, 38, 38, 0.388));
+}
+
+/* Boton Inicio */
+.btnInicio {
+    /* background-image: linear-gradient(to right, #16222A 0%, #3A6073 51%, #16222A 100%); */
+    /* background-image: linear-gradient(to right, #DCE35B 0%, #45B649  51%, #DCE35B  100%); */
+    /* background-image: linear-gradient(to right, #fe8c00 0%, #f83600  51%, #fe8c00  100%); */
+    background-image: linear-gradient(to right, #56ab2f 0%, #a8e063  51%, #56ab2f  100%);
+    
+}
+
+/* Boton Palabra */
+.btnPalabra {
+    font-size: 13px;
+    font-weight: bold;
+    /* background-image: linear-gradient(to right, #ADD100 0%, #7B920A 51%, #ADD100 100%); */
+    /* background-image: linear-gradient(to right, #00c6ff 0%, #0072ff  51%, #00c6ff  100%); */
+    background-image: linear-gradient(to right, #fe8c00 0%, #f83600  51%, #fe8c00  100%);
+}
+
+/** Boton Nuevo Juego */
+.btnNuevoJuego{
+    /* background-image: linear-gradient(to right, #fe8c00 0%, #f83600  51%, #fe8c00  100%); */
+    background-image: linear-gradient(to right, #00d2ff 0%, #3a7bd5  51%, #00d2ff  100%);
+    padding: 1.2% 2%;
+    margin-bottom: 20px;
+}
+
+/* Boton Desistir */
+.btnDesistir {
+    /* background-image: linear-gradient(to right, #16222A 0%, #3A6073 51%, #16222A 100%); */
+    /* background-image: linear-gradient(to right, #DCE35B 0%, #45B649  51%, #DCE35B  100%); */
+    /* background-image: linear-gradient(to right, #fe8c00 0%, #f83600  51%, #fe8c00  100%); */
+    background-image: linear-gradient(to right, #e52d27 0%, #b31217  51%, #e52d27  100%);
+    padding: 1.2% 2%;
+    margin-bottom: 20px;
+}
+
+.btnGuardar{
+    margin-right: 17%;
+    background-image: linear-gradient(to right, #56ab2f 0%, #a8e063  51%, #56ab2f  100%);
+}
+.btnCerrar{
+    background-image: linear-gradient(to right, #e52d27 0%, #b31217  51%, #e52d27  100%);
+}
+
+
+
+
+/* Boton Copiar */
+.btn-grad-copy {
+    background-image: linear-gradient(to right, #457fca 0%, #5691c8 51%, #457fca 100%);
+}
+
+/* PIE DE PAGINA */
+footer {
+    font-family: 'Inter', sans-serif;
+    background: rgba(27, 27, 27, 0.83);
+    position: absolute;
+    padding-top: 10px;
+    bottom: 0;
+    width: 100%;
+    height: 5%;
+    color: white;
+    text-align: center;
+    margin-bottom: 0%;
+}
+
+footer i,
+footer p {
+    color: white;
+    font-size: 20px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+footer i:hover {
+    color: rgb(16, 196, 216);
+    transform: scale(1.2);
+}
+/********************************************************** Para tabletas */
+/********************************************************** Para moviles */
