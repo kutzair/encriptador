@@ -22,7 +22,8 @@ html {
 
 body {
     background-color: #E5E5E5;
-    background: url(/img/alura_bg-12.jpg);
+    /* background: url(/img/alura_bg-12.jpg); */
+    background-image: url("/img/alura_bg-12.jpg");
     background-image: no-repeat;
     background-image: fixed;
     -webkit-background-size: cover;
