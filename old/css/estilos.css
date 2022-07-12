@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+@viewport {
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
+
+@-ms-viewport {
+    width: extend-to-zoom;
+    zoom: 1.0;
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+    line-height: 150%;
+}
+
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    background-color: #E5E5E5;
+    background: url(/img/alura_bg-12.jpg);
+    background-image: no-repeat;
+    background-image: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: 50%;
+    margin: 0;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    color: white;
+    display: flex;
+    padding: 10px 0;
+}
+
+nav {
+    width: 100%;
+    height: 70px;
+    padding-top: 1%;
+    background: rgba(4, 4, 4, 0.494);
+    filter: drop-shadow(0 0.5rem 0.50rem rgba(20, 22, 26, 0.938));
+    top: 0;
+    position: absolute;
+}
+
+.logo {
+    margin-top: 0.5%;
+    margin-right: 73%;
+    position: relative;
+}
+
+.titulo {
+    font-family: 'Inter', sans-serif;
+    font-size: 30pt;
+    display: contents;
+    text-align: right;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 105, 158, 0);
+    padding: 9% 0%;
+    margin-top: 20px;
+
+}
+
+/* Propiedades de los paneles */
+.paneles {
+    width: 50%;
+    min-width: 300px;
+    min-height: 300px;
+    border-radius: 10px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0.5% 0.8% 0.5% 0.5%;
+    margin-top: 0px;
+}
+
+.mensajeEntrada {
+    /* Estilo Plateado */
+     /* propiedad para navegadores antiguos */
+    background: #8e9eab;
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #eef2f3, #8e9eab);
+    height: 50vh;
+    background-color: #021937dd;
+    filter: drop-shadow(0 0 0.50rem rgba(20, 22, 26, 0.938));
+
+}
+
+.mensajeSalida {
+    display: none;
+    /* Estilo Plateado invertido */
+    /* propiedad para navegadores antiguos */
+    background: #eef2f3;
+        /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, #8e9eab, #eef2f3);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #8e9eab, #eef2f3);
+    height: 50vh;
+    background-color: #0287c4;
+    filter: drop-shadow(0 0 1.0rem rgba(0, 0, 0, 0.832));
+
+}
+
+/* propiedades de los textarea */
+#mensajeIN,
+#mensajeOUT {
+    margin: 0;
+    text-align: justify;
+    width: 100%;
+    height: 200px;
+    font-size: 22px;
+    border: 1px solid lightgray;
+    resize: none;
+    border-radius: 10px;
+    outline: none;
+}
+
+.aviso {
+    color: rgb(0, 0, 0);
+    font-size: medium;
+    font-style: italic;
+}
+
+/* BOTONES */
+.botones {
+    text-align: center;
+    margin: 10px auto;
+}
+/* Propiedades generales de los botones. */
+.btn{
+    width: 125px;
+    height: 40px;
+    margin: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+    display: inline-block;
+    border: none;
+    filter: drop-shadow(0rem 0.2rem 0.4rem rgba(0, 0, 0, 0.561));
+}
+.btn:hover{
+    /* cambia la direccion del degradado desde aqui */
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+/* Boton Encriptar */
+.btn-grad-encode {
+    background-image: linear-gradient(to right, #16222A 0%, #3A6073 51%, #16222A 100%);
+}
+
+/* Boton Descencriptar */
+.btn-grad-decode {
+    background-image: linear-gradient(to right, #ADD100 0%, #7B920A 51%, #ADD100 100%);
+}
+
+/* Boton Copiar */
+.btn-grad-copy {
+    background-image: linear-gradient(to right, #457fca 0%, #5691c8 51%, #457fca 100%);
+}
+
+/* PIE DE PAGINA */
+footer {
+    font-family: 'Inter', sans-serif;
+    background: rgba(4, 4, 4, 0.494);
+    position: absolute;
+    padding-top: 10px;
+    bottom: 0;
+    width: 100%;
+    height: 5%;
+    color: white;
+    text-align: center;
+    margin-bottom: 0%;
+}
+
+footer i,
+footer p {
+    color: white;
+    font-size: 20px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+footer i:hover {
+    color: rgb(16, 196, 216);
+    transform: scale(1.2);
+}
+
+
+/********************************************************** Para moviles */
+@media (max-width: 500px) {
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+    * {
+        font-family: 'Inter', sans-serif;
+        line-height: 150%;
+    }
+
+    html {
+        min-height: 100%;
+        position: relative;
+    }
+
+    body {
+        background-color: #E5E5E5;
+        /* background: url(/img/alura_bg-12.jpg); */
+        background-image: no-repeat;
+        background-image: fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-position: 50%;
+        margin: 0;
+    }
+
+    header1 {
+        background: rgb(36, 36, 36);
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 40px;
+        color: white;
+        display: flex;
+        padding: 10px 0;
+    }
+
+    .logo {
+        margin-right: 25%;
+    }
+    .titulo{
+        font-size: 20pt;
+    }
+
+    main {
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0);
+        padding: 10% 0%;
+        margin-top: 20px;
+
+    }
+
+    .paneles {
+        width: 70%;
+        height: 45vh;
+        min-width: 300px;
+        min-height: 200px;
+        border-radius: 10px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 2% 3%; /** padding: 20px 5%; */
+        margin-top: 10%;
+    
+    }
+
+    .mensajeEntrada {
+        background-color: #032551d4;
+        filter: drop-shadow(0 0 0.50rem rgba(0, 0, 0, 0.896));
+
+    }
+
+    .mensajeSalida {
+        display: none;
+        background-color: #032551d4;
+        filter: drop-shadow(0 0 1.0rem rgba(0, 0, 0, 0.896));
+
+    }
+
+    #mensajeIN,
+    #mensajeOUT {
+        margin: 0;
+        text-align: justify;
+        width: 99%;
+        height: 26vh;
+        /** 210px */
+        font-size: 22px;
+        background: #eef9ffa3;
+    }
+
+    #mensajeOUT {
+        height: 25vh;
+    }
+
+    .aviso {
+        font-size:smaller;
+        font-style: italic;
+        line-height: 1em;
+    }
+
+    /* BOTONES */
+    .botones1 {
+        text-align: center;
+        margin: 5px auto;
+    }
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,49 +10,77 @@
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    
-    <title>Encriptador Alura</title>
+
+    <title>Osiris Castillo - Alura Challenge</title>
 </head>
+
 <body>
     <header>
         <nav>
             <img class="logo" src="img/Logo_blanco.png" alt="logotipo alura">
-            <h1 class="titulo">Encriptador</h1>
+            <h1 class="titulo">Alura Challenges</h1>
         </nav>
     </header>
-    <main>
-        <!-- <section id="mensajeEntrada" class="mensajeEntrada paneles">
-            <textarea id="mensajeIN" name="mitexto" id="mitexto" cols="30" rows="10"></textarea>
-        </section> -->
-        <section id="mensajeEntrada" class="mensajeEntrada paneles animate__animated animate__animated">
-            <div class="captura">
-                <textarea name="mensajeIN" id="mensajeIN" cols="30" rows="10" placeholder="Ingrese el texto a encriptar"></textarea>
-            </div>
-            <p class="aviso"><small>Por favor ingrese el texto que desee codificar.</small></p>
-            <small class="aviso">* Sólo letras minúsculas, sin acentos.</small><br>
 
+    <main>
+        <!-- MENU PRINCIPAL -->
+        <section id="menuPrincipal" class="menuPrincipal animate__animated animate__flipInX">
+            <p class="tituloCentrado">MENU</p>
             <div class="botones">
-                <button onclick="encriptarBtn()" class="btn-grad-encode btn">Encriptar</button>
-                <button onclick="descencriptarBtn()" class="btn-grad-decode btn">Descencriptar</button>
+                <!-- <button onclick="inicioBtn()" class="btn btnInicio">Encriptador</button> -->
+                <a class="btn btnEncriptador" href="https://kutzair.github.io/proyectos/encriptador/index.html" target="_blank">Encriptador</a>
+                <a class="btn btnAhorcado" href="https://kutzair.github.io/proyectos/ahorcado/index.html" target="_blank">Juego Ahorcado</a>
+                <a class="btn btnSobreMi" href="#" target="_blank">Sobre Mi</a>
+                <a class="btn btnInsignias" href="#" target="_blank">Insignias</a>
+                
+                
             </div>
         </section>
-        <section id="mensajeSalida" class="mensajeSalida paneles">
-            <div class="resultado">
-                <textarea name="mensajeOUT" id="mensajeOUT" cols="30" rows="10" placeholder="Mensaje encriptado" readonly></textarea>
-            </div>
-            <p class="aviso"><small>Listo!, su texto ha sido codificado con exito!, </br> presione el botón copiar para tenerlo disponible en el portapapeles.</small></p>
+        <!-- INICIO JUEGO y PANEL DEL JUEGO -->
+        <section id="juegoAhorcado" class="juegoAhorcado animate__animated animate__flipInX">
+            <canvas id = "horca" class = "lienzoAhorcado" width="1054" height="800"></canvas>
             <div class="botones">
-                <button onclick="copiarBtn()" class="btn-grad-copy btn"><i class="fa-solid fa-copy"></i> Copiar</button>
+                <button class="btn btnNuevoJuego" onclick="nuevoJuegoBtn()">Nuevo Juego</button>
+                <button class="btn btnDesistir" onclick="cancelarJuegoBtn()">Salir</button>
+            </div>
+        </section>
+        <!-- AGREGAR PALABRA -->
+        <section id="agregarPalabra" class="agregarPalabra animate__animated animate__flipInX">
+            <div class="formulario">
+                <p class="tituloCentrado">Ingrese una palabra de máximo 8 letras</p>
+                <input id="inputPalabra" class="palabraInput" type="text" maxlength="8" placeholder="ingresa una palabra">
+
+                <div class="botones">
+                    <button class="btn btnGuardar" onclick="guardarPalabra()">Guardar y empezar</button>
+                    <button class="btn btnCerrar" onclick="cerrarPalabraBtn()">Cancelar</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ALERTA MODAL -->
+        <section id="alertaModal" class="alertaModal overlay1 animate__animated animate__flipInX">
+            <div class="formulario">
+                <p id = "tituloAlertaModal" class="tituloCentrado">Titulo del Mensaje</p>
+                <p id = "msgAlertaModal"> Mensaje de la Alerta </p>
+
+                <div class="botones">
+                    <button id= "btnAlertaModal" class="btn btnCerrar" onclick="cerrarModalBtn()">Cerrar</button>
+                </div>
             </div>
         </section>
 
     </main>
+
     <footer>
         <p>
-            Osiris Castillo - 
-            <a href="https://github.com/kutzair/encriptador" target="_blank" rel="noopener noreferrer"> <i class="fa-brands fa-github"></i></a>
+            Osiris Castillo -
+            <a href="https://github.com/kutzair/encriptador" target="_blank" rel="noopener noreferrer"> <i
+                    class="fa-brands fa-github"></i></a>
         </p>
     </footer>
-    <script src="/js/lib.js"></script>
+    <!-- <script src="js/ahorcado.js"></script>
+    <script src="js/logica.js"></script>
+    <script src="js/graficos.js"></script> -->
 </body>
+
 </html>
