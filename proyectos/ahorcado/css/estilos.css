@@ -102,7 +102,7 @@ main {
 .menuPrincipal{
     /* display: none; */
     width: 350px;
-    height:100px;
+    height:120px;
     padding-top: 20px;
     border-radius: 10px;
     /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
@@ -118,6 +118,12 @@ main {
     filter: drop-shadow(0 0 0.50rem rgba(20, 22, 26, 0.938));
 
     margin-top: 20%;
+}
+.pieVentana{
+    color: white;
+    font-size: 10pt;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .juegoAhorcado{
