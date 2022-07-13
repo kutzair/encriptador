@@ -67,8 +67,9 @@ nav {
 
 .titulo {
     font-family: 'Inter', sans-serif;
-    font-size: 30pt;
-    margin-left: 75%;
+    font-size: 20pt;
+    margin-top: 0.5%;
+    margin-left: 85%;
 }
 
 main {

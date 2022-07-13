@@ -55,16 +55,23 @@ nav {
 }
 
 .logo {
-    margin-top: 0.5%;
-    margin-right: 73%;
-    position: relative;
+    margin-top: 0.2%;
+    margin-right: 10%;
+    position: fixed;
 }
 
 .titulo {
-    font-family: 'Inter', sans-serif;
-    font-size: 30pt;
+    /* font-family: 'Inter', sans-serif;
+    font-size: 15pt;
     display: contents;
-    text-align: right;
+    text-align: right; */
+
+    font-family: 'Inter', sans-serif;
+    font-size: 20pt;
+    margin-top: 0.5%;
+    margin-left: 85%;
+
+
 }
 
 main {
